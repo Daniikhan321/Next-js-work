@@ -8,26 +8,35 @@ import Link from "next/link";
 function Navbar({ className }: { className?: string }) {
     const [active, setActive] = useState<string | null>(null);
   return (
-    <div
-    className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
+    <div 
+    className={cn("fixed top-10 inset-x-0 mt-5 max-w-2xl mx-auto z-50 bg-black-800 color-white", className)}
     >
-        <Menu setActive={setActive}>
-            <Link href={"#"}>
-            <MenuItem setActive={setActive} active={active} item="Home">
-            test
-            </MenuItem>
+        <Menu  setActive={setActive}  >
+            <Link href={"/"}>
+            <MenuItem  setActive={setActive} active={active} item="Home">
+           
+            </MenuItem >
             </Link>
-            <Link href={"#"}>
-            <MenuItem setActive={setActive} active={active} item="Service">
-            service
-            </MenuItem>
-            </Link>
-            <Link href={"#"}>
-            <MenuItem setActive={setActive} active={active} item="About">
-            About-js
             
+            <MenuItem setActive={setActive} active={active} item="Our-courses">
+            <div className=" flex flex-col space-y-3 ">
+              <HoveredLink href="/courses" >All courses</HoveredLink>
+            <HoveredLink href="/courses" >Basic Music Theory</HoveredLink>
+            <HoveredLink href="/courses" >Advanced Composition</HoveredLink>
+            <HoveredLink href="/courses" >Song writing</HoveredLink>
+            <HoveredLink href="/courses" >Interface Design</HoveredLink>
+
+            </div>
+
             </MenuItem>
+            
+            
+             <Link href={"/contact"}>
+            <MenuItem  setActive={setActive} active={active} item="Contact-Us">
+           
+            </MenuItem >
             </Link>
+           
 
         </Menu>
     
