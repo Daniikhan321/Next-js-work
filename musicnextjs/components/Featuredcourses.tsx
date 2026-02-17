@@ -63,7 +63,7 @@ function Featuredcourses() {
          ))}
         </div>
       </div>
-      <div className=' mt-20 text-center'>
+      <div className=' mt-20 text-center pb-4'>
         <Link href="./courses">
         <button className=' py-2 px-4 rounded-lg bg-red-800 text-white'>
            view all courses
