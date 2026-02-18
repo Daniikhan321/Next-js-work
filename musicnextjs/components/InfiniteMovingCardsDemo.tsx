@@ -5,7 +5,16 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 export default function InfiniteMovingCardsDemo() {
   return (
-    <div className="h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+    <div className="h-[40rem] rounded-md flex flex-col antialiased 
+bg-white dark:bg-black
+[background-size:40px_40px]
+dark:[background-image:linear-gradient(to_right,rgba(255,255,255,0.2)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.2)_1px,transparent_1px)]
+items-center justify-center relative overflow-hidden
+">
+      
+      <h2 className="text-4xl font-bold mb-8">
+        Hear our Harmony: Voices of Success
+      </h2>
       <InfiniteMovingCards
         items={testimonials}
         direction="right"
