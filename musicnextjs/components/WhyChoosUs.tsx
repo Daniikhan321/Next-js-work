@@ -54,7 +54,7 @@ export default function WhyChoosUs() {
   },
 ];
   return (
-    <div className="w-full py-4">
+    <div className="w-full pt-4">
       <StickyScroll content={content} />
     </div>
 

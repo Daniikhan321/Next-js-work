@@ -18,6 +18,19 @@
 
 }
 
+.bg-grid-white {
+  background-image: 
+    linear-gradient(to right, rgba(255,255,255,0.2) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255,255,255,0.2) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.bg-grid-black {
+  background-image: 
+    linear-gradient(to right, rgba(0,0,0,0.2) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.2) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
 
 
 @keyframes spotlight {
